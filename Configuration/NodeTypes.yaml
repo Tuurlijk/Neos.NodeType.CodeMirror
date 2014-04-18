@@ -1,0 +1,64 @@
+'TypoFree.Neos.NodeTypes:CodeSnippet':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    inlineEditable: FALSE
+    icon: 'icon-code'
+    label: 'Code Snippet'
+    inspector:
+      groups:
+        source:
+          label: 'Snippet Source'
+          position: 10
+        styling:
+          label: 'Styling'
+          position: 20
+  properties:
+    formattedSource:
+      type: string
+      defaultValue: ''
+    source:
+      type: string
+      ui:
+        label: 'Snippet Content'
+        inspector:
+          group: 'source'
+          editor: Content/Inspector/Editors/CodeSnippetEditor
+      defaultValue: 'Enter Code Snippet here'
+    language:
+      type: string
+      defaultValue: 'text'
+      ui:
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'source'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              'text':
+                label: 'Plain Text'
+              'javascript':
+                label: 'JavaScript'
+              'text/css':
+                label: 'CSS'
+              'text/html':
+                label: 'HTML'
+              'text/x-php':
+                label: 'PHP'
+              'text/x-yaml':
+                label: 'YAML'
+              'text/typoscript2':
+                label: 'TypoScript2'
+    theme:
+      type: string
+      defaultValue: 'solarized dark'
+      ui:
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'styling'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              'solarized dark':
+                label: 'Solarized Dark'
+              'solarized light':
+                label: 'Solarized Light'

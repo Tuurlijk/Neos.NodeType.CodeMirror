@@ -1,0 +1,8 @@
+# CodeSnippet TS Object
+prototype(TypoFree.Neos.NodeTypes:CodeSnippet) < prototype(TYPO3.Neos:Template)
+prototype(TypoFree.Neos.NodeTypes:CodeSnippet) {
+	templatePath = 'resource://TypoFree.Neos.NodeTypes/Private/Templates/TypoScriptObjects/CodeSnippet.html'
+	language = ${q(node).property('language')}
+	theme = ${q(node).property('theme')}
+	formattedSource = ${q(node).property('formattedSource')}
+}
