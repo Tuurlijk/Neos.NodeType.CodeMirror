@@ -22,7 +22,7 @@
         label: 'Snippet Content'
         inspector:
           group: 'source'
-          editor: Content/Inspector/Editors/CodeSnippetEditor
+          editor: 'TYPO3.Neos/Inspector/Editors/HtmlEditor'
       defaultValue: 'Enter Code Snippet here'
     language:
       type: string
@@ -31,7 +31,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'source'
-          editor: Content/Inspector/Editors/SelectBoxEditor
+          editor: 'Content/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               'text':
@@ -55,7 +55,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'styling'
-          editor: Content/Inspector/Editors/SelectBoxEditor
+          editor: 'Content/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               'solarized dark':
