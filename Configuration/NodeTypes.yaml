@@ -1,4 +1,4 @@
-'TypoFree.Neos.NodeTypes:CodeSnippet':
+'TypoFree.Neos.NodeType.CodeMirror:CodeSnippet':
   superTypes: ['TYPO3.Neos:Content']
   ui:
     inlineEditable: FALSE
