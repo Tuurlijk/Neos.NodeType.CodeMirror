@@ -13,17 +13,18 @@
           label: 'Styling'
           position: 20
   properties:
-    formattedSource:
-      type: string
-      defaultValue: ''
     source:
-      type: string
+      type: 'string'
       ui:
-        label: 'Snippet Content'
+        label: 'Code Snippet'
         inspector:
           group: 'source'
-          editor: 'TYPO3.Neos/Inspector/Editors/HtmlEditor'
-      defaultValue: 'Enter Code Snippet here'
+          editor: 'TYPO3.Neos/Inspector/Editors/CodeEditor'
+          editorOptions:
+            buttonLabel: 'Edit Code Snippet'
+            highlightingMode: 'text/plain'
+        reloadIfChanged: TRUE
+      defaultValue: 'Enter Code Snippet with the Inspector'
     language:
       type: string
       defaultValue: 'text'
@@ -42,11 +43,15 @@
                 label: 'CSS'
               'text/html':
                 label: 'HTML'
-              'text/x-php':
+              'php':
                 label: 'PHP'
-              'text/x-yaml':
+              'ruby':
+                label: 'Ruby'
+              'shell':
+                label: 'Shell'
+              'yaml':
                 label: 'YAML'
-              'text/typoscript2':
+              'typoscript2':
                 label: 'TypoScript2'
     theme:
       type: string
@@ -62,3 +67,11 @@
                 label: 'Solarized Dark'
               'solarized light':
                 label: 'Solarized Light'
+    firstLineNumber:
+      type: integer
+      defaultValue: 1
+      ui:
+        label: 'First linenumber'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'styling'

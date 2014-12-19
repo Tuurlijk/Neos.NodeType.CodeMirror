@@ -1,8 +1,8 @@
 # CodeSnippet TS Object
-prototype(TypoFree.Neos.NodeType.CodeMirror:CodeSnippet) < prototype(TYPO3.Neos:Template)
-prototype(TypoFree.Neos.NodeType.CodeMirror:CodeSnippet) {
+prototype(TypoFree.Neos.NodeType.CodeMirror:CodeSnippet) < prototype(TYPO3.TypoScript:Template) {
 	templatePath = 'resource://TypoFree.Neos.NodeType.CodeMirror/Private/Templates/TypoScriptObjects/CodeSnippet.html'
 	language = ${q(node).property('language')}
 	theme = ${q(node).property('theme')}
-	formattedSource = ${q(node).property('formattedSource')}
+	firstLineNumber = ${q(node).property('firstLineNumber')}
+	source = ${q(node).property('source')}
 }
