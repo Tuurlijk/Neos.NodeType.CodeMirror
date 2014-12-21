@@ -23,7 +23,6 @@
           editorOptions:
             buttonLabel: 'Edit Code Snippet'
             highlightingMode: 'text/plain'
-        reloadIfChanged: TRUE
       defaultValue: 'Enter Code Snippet with the Inspector'
     language:
       type: string

@@ -1,4 +1,4 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <neos:contentElement node="{node}">
-	<div class="neos-code-snippet" data-firstlinenumber="{firstLineNumber}" lang="{language}">{source -> f:format.raw()}</div>
+	<div class="neos-code-snippet {theme}" data-firstlinenumber="{firstLineNumber}" lang="{language}">{source -> f:format.raw()}</div>
 </neos:contentElement>
