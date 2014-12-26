@@ -4,5 +4,6 @@ prototype(TypoFree.Neos.NodeType.CodeMirror:CodeSnippet) < prototype(TYPO3.TypoS
 	language = ${q(node).property('language')}
 	theme = ${q(node).property('theme')}
 	firstLineNumber = ${q(node).property('firstLineNumber')}
+	highlightLines = ${q(node).property('highlightLines')}
 	source = ${q(node).property('source')}
 }
