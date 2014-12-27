@@ -1,4 +1,9 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <neos:contentElement node="{node}">
-	<pre class="code-snippet {theme}" data-firstlinenumber="{firstLineNumber}" data-highlightLines="{highlightLines}" lang="{language}">{source -> f:format.raw()}</pre>
+	<textarea
+			  class="code-snippet"
+			  data-theme="{theme}"
+			  data-firstlinenumber="{firstLineNumber}"
+			  data-highlightLines="{highlightLines}"
+			  lang="{language}">{source -> f:format.htmlspecialchars()}</textarea>
 </neos:contentElement>

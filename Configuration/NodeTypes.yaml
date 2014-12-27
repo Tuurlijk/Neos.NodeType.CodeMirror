@@ -28,6 +28,7 @@
       type: string
       defaultValue: 'text'
       ui:
+        label: 'Language'
         reloadIfChanged: TRUE
         inspector:
           group: 'source'
@@ -38,9 +39,9 @@
                 label: 'Plain Text'
               'javascript':
                 label: 'JavaScript'
-              'text/css':
+              'css':
                 label: 'CSS'
-              'text/html':
+              'htmlmixed':
                 label: 'HTML'
               'php':
                 label: 'PHP'
@@ -48,14 +49,17 @@
                 label: 'Ruby'
               'shell':
                 label: 'Shell'
-              'yaml':
-                label: 'YAML'
               'typoscript2':
                 label: 'TypoScript2'
+              'xml':
+                label: 'XML'
+              'yaml':
+                label: 'YAML'
     theme:
       type: string
       defaultValue: 'solarized dark'
       ui:
+        label: 'Theme'
         reloadIfChanged: TRUE
         inspector:
           group: 'styling'
