@@ -1,9 +1,17 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <neos:contentElement node="{node}">
-	<textarea
-			  class="code-snippet"
-			  data-theme="{theme}"
-			  data-firstlinenumber="{firstLineNumber}"
-			  data-highlightLines="{highlightLines}"
-			  lang="{language}">{source -> f:format.htmlspecialchars()}</textarea>
+<div class="typo3-neos-nodetypes-codesnippet">
+	<figure>
+		<textarea
+				  data-theme="{theme}"
+				  data-firstlinenumber="{firstLineNumber}"
+				  data-highlightLines="{highlightLines}"
+				  lang="{language}">{source -> f:format.htmlspecialchars()}</textarea>
+		<f:if condition="{caption}">
+			<figcaption>
+				{caption}
+			</figcaption>
+		</f:if>
+	</figure>
+</div>
 </neos:contentElement>

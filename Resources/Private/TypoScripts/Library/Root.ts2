@@ -1,4 +1,4 @@
-# CodeSnippet TS Object
+# CodeSnippet TypoScript Object
 prototype(TypoFree.Neos.NodeType.CodeMirror:CodeSnippet) < prototype(TYPO3.TypoScript:Template) {
 	templatePath = 'resource://TypoFree.Neos.NodeType.CodeMirror/Private/Templates/TypoScriptObjects/CodeSnippet.html'
 	language = ${q(node).property('language')}

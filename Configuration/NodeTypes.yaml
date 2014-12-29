@@ -55,6 +55,14 @@
                 label: 'XML'
               'yaml':
                 label: 'YAML'
+    caption:
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Caption'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'source'
     theme:
       type: string
       defaultValue: 'solarized dark'
