@@ -1,6 +1,4 @@
-{namespace neos=TYPO3\Neos\ViewHelpers}
-<neos:contentElement node="{node}">
-<div class="typo3-neos-nodetypes-codesnippet">
+<div{attributes -> f:format.raw()}>
 	<figure>
 		<textarea
 				  data-theme="{theme}"
@@ -14,4 +12,3 @@
 		</f:if>
 	</figure>
 </div>
-</neos:contentElement>
