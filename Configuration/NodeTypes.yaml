@@ -78,6 +78,13 @@
                 label: 'Solarized Dark'
               'solarized light':
                 label: 'Solarized Light'
+    enableLineNumbers:
+      type: boolean
+      defaultValue: TRUE
+      ui:
+        label: 'Enable linenumbers'
+        inspector:
+          group: 'styling'
     firstLineNumber:
       type: integer
       defaultValue: 1
