@@ -35,6 +35,8 @@
           editor: 'Content/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
+              'coffeescript':
+                label: 'CoffeeScript'
               'text':
                 label: 'Plain Text'
               'javascript':
@@ -47,6 +49,8 @@
                 label: 'PHP'
               'ruby':
                 label: 'Ruby'
+              'sass':
+                label: 'SASS'
               'shell':
                 label: 'Shell'
               'typoscript2':
@@ -65,7 +69,7 @@
           group: 'source'
     theme:
       type: string
-      defaultValue: 'solarized dark'
+      defaultValue: 'typofree'
       ui:
         label: 'Theme'
         reloadIfChanged: TRUE
@@ -78,6 +82,10 @@
                 label: 'Solarized Dark'
               'solarized light':
                 label: 'Solarized Light'
+              'typofree':
+                label: 'TypoFree'
+              'zenburn':
+                label: 'Zenburn'
     enableLineNumbers:
       type: boolean
       defaultValue: TRUE
